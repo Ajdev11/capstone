@@ -7,6 +7,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { path } from "../Router/router";
 import { createUserWithEmailAndPassword, sendEmailVerification } from "firebase/auth";
 import { auth } from "../firebase";
+import { signInWithGoogle } from "../firebase";
 
 const Register: React.FC = () => {
   const [firstName, setFirstName] = useState("");
@@ -202,8 +203,14 @@ const Register: React.FC = () => {
           </div>
           <div className="">
             <div className="items-center justify-center flex border shadow  appearance-none text-lg rounded-lg bg-white w-full py-3 px-3 text-gray-700 mt-4 mb-4 leading-tight focus:outline-none">
-              <img className="mr-2" src={goggle} alt="" />
+              <img className="mr-2" src={goggle} alt="" onClick={signInWithGoogle} />
               <h1>Sign up with Goggle</h1>
+              
+              {/* <div>
+                <h1>{localStorage.getItem("name")}</h1>
+                 <h1>{localStorage.getItem("email")}</h1>
+                 <img src={localStorage.getItem("photoUrl") ?? ""} alt="" />
+              </div> */}
             </div>
             <div className="items-center justify-center flex appearance-none text-lg rounded bg-white shadow border w-full py-3 px-3 text-gray-700 mt-4 mb-4 leading-tight focus:outline-none">
               <img className="mr-2" src={linkd} alt="" />

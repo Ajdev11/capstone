@@ -10,6 +10,7 @@
     "@types/node": "^16.18.31",
     "@types/react": "^18.2.6",
     "@types/react-dom": "^18.2.4",
+    "build": "^0.1.4",
     "firebase": "^9.23.0",
     "gsap": "^3.12.2",
     "react": "^18.2.0",
@@ -17,6 +18,7 @@
     "react-icons": "^4.10.1",
     "react-router-dom": "^6.14.0",
     "react-scripts": "5.0.1",
+    "run": "^1.4.0",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
